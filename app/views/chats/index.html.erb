@@ -1,7 +1,8 @@
 <h1>BiggerPockets Messenger</h1>
+<h2>Chat Rooms</h2>
 
-<div id="messages">
-  <%= render @messages %>
-</div>
+<p><%= link_to 'New chat', new_chat_path %></p>
 
-  <%= text_area_tag :message_body %>
+<ul>
+  <%= render @chats %>
+</ul>

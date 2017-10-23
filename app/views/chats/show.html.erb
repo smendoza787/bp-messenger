@@ -1,0 +1,7 @@
+<h1><%= @chat.name %></h1>
+
+<div id="messages" data-chat-id="<%= @chat.id %>">
+  <%= render @chat.messages %>
+</div>
+
+<%= text_area_tag :message_body %>
