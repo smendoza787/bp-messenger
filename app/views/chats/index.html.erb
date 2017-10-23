@@ -4,9 +4,4 @@
   <%= render @messages %>
 </div>
 
-<%= form_for @message do |f| %>
-  <%= f.label :body %>
-  <%= f.text_area :body %>
-  <br>
-  <%= f.submit %>
-<% end %>
+  <%= text_area_tag :message_body %>
