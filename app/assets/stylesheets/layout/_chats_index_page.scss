@@ -1,3 +1,5 @@
+$no-active-font: 'Ubuntu', open-sans;
+
 #conversations,
   #friends {
     display: flex;
@@ -9,7 +11,7 @@
     h2 {
       width: fit-content;
       color: white;
-      text-shadow: 0 2px 3px #000;
+      text-shadow: 0 2px 2px #424242;
       padding: 10px 10px 10px;
       display: inline-block;
       border-radius: 10px 10px 0 0;
@@ -22,6 +24,7 @@
   .friends-list {
     padding: 10px;
     border-radius: 10px;
+    box-shadow: 0 1px 4px #2e2e2e;
 }
 
 #conversations h2,
@@ -47,7 +50,7 @@
 
   &:hover {
     transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
-    color: black;
+    color: #585858;
     background-color: #478fca;
   }
 
@@ -71,4 +74,15 @@
 
 a:hover {
   text-decoration: none;
+}
+
+.no-active {
+  position: relative;
+  z-index: 10;
+  background-color: #dedede;
+  padding: 20px;
+  font-size: 1.5em;
+  border-radius: 5px;
+  font-family: $no-active-font;
+  color: #b9b9b9;
 }
