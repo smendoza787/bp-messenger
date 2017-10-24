@@ -2,9 +2,10 @@ $h1-font: 'Oswald', sans-serif;
 
 $break-small: 440px;
 
-#clearance.sign-in {
+#clearance.sign-in,
+#clearance.sign-up,
+#clearance.password-reset {
   width: 90%;
-  // height: 90vh;
   text-align: center;
   margin: 100px auto 0;
   display: flex;
@@ -20,7 +21,9 @@ $break-small: 440px;
     font-family: $h1-font;
   }
 
-  #session_email, #session_password {
+  #session_email, #session_password,
+  #user_email, #user_password,
+  #password_email {
     background-color: #dddddd;
     padding: 12px;
     border-radius: 500px;
@@ -42,6 +45,14 @@ $break-small: 440px;
     height: 34px;
     margin: 0 5px 5px;
   }
+}
+
+#clearance.password-reset {
+  height: 300px;
+}
+
+#clearance.sign-up {
+  height: 385px;
 }
 
 #login-btn, #signup-btn {

@@ -1,9 +1,9 @@
 <%= form_for :session, url: session_path do |form| %>
-    <p class="login-labels">Email</p>
-    <%= form.text_field :email, type: 'email' %>
+  <p class="login-labels">Email</p>
+  <%= form.text_field :email, type: 'email' %>
 
-    <p class="login-labels">Password</p>
-    <%= form.password_field :password %>
+  <p class="login-labels">Password</p>
+  <%= form.password_field :password %>
 
   <div class="other-links">
     <%= form.submit 'Login', class: 'btn btn-lg btn-success' %>
