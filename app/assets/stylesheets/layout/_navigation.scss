@@ -9,6 +9,7 @@ $family: 'Oswald', sans-serif;
   align-items: center;
   padding: 15px;
   position: fixed;
+  top: 0;
 
   h4 {
     margin: 0;
@@ -23,9 +24,10 @@ $family: 'Oswald', sans-serif;
   a {
     color: white;
     font-family: $family;
+    font-size: 1.3em;
 
     &:hover {
-      color: #808080;
+      color: #eee;
     }
   }
 }
