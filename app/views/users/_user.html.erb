@@ -1,5 +1,9 @@
-<li>
-  <%= link_to(user_chats_path(current_user, :other_user => user.id), method: :post) do %>
+<%= link_to(user_chats_path(current_user, :other_user => user.id), method: :post) do %>
+  <div class="user">
+    <div class="user-avatar"></div>
     <%= user.name %>
-  <% end %>
-</li>
+    <div class="user-msg-count">
+      <%= user.msg_count(current_user) %>
+    </div>
+  </div>
+<% end %>

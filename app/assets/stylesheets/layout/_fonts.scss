@@ -1,1 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:300,400|Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400|Ubuntu|Concert+One');
+
+$font: 'Ubuntu', sans-serif;
+$count-font: 'Concert One', sans-serif;
+
+body {
+  font-family: $font;
+}
+
+.user-msg-count {
+  font-family: $count-font;
+  font-size: 1em;
+}

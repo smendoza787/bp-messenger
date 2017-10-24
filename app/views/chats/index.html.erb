@@ -1,23 +1,21 @@
 <div id="conversations">
-  <h1>Conversations</h1>
+  <h2>Conversations</h2>
     <% if @existing_chats_users.length > 0 %>
-      <ul>
+      <div class="conversation-list">
         <% @existing_chats_users.each do |other_user| %>
           <% if other_user != current_user %>
-            <li>
-              <%= link_to(user_chats_path(current_user, :other_user => other_user.id), method: :post) do %>
-                <%= other_user.name %>
-              <% end %>
-            </li>
+            <%= render 'users/user', user: other_user  %>
           <% end %>
         <% end %>
-      </ul>
+      </div>
     <% else %>
       <p>No Active Chats</p>
     <% end %>
+</div>
 
-  <h1>Friends List</h1>
-  <ul>
+<div id="friends">
+  <h2>Friends</h2>
+  <div class="friends-list">
     <%= render @other_users %>
-  </ul>
+  </div>
 </div>
