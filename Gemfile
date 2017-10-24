@@ -51,7 +51,8 @@ group :development do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
   # for readable rails code
-gem 'hirb'
+  gem 'hirb'
+  gem 'bootstrap-sass'
 end
 
 group :production do
