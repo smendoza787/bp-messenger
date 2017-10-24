@@ -16,4 +16,16 @@ class User < ApplicationRecord
     end
     existing_chat_users.uniq
   end
+
+  def msg_count(current_user)
+    match = nil
+    current_user.chats.each do |chat1|
+      self.chats.each do |chat2|
+        if chat1 == chat2
+          match = chat1
+        end
+      end
+    end
+    match.messages.length
+  end
 end
