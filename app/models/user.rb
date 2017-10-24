@@ -6,7 +6,7 @@ class User < ApplicationRecord
   has_many :chats, through: :subscriptions
 
   def name
-    email.split('@')[0]
+    email.split('@')[0].capitalize!
   end
 
   def existing_chats_users
