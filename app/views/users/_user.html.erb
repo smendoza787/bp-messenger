@@ -2,8 +2,12 @@
   <div class="user">
     <div class="user-avatar"></div>
     <%= user.name %>
-    <div class="user-msg-count">
-      <%= user.msg_count(current_user) %>
-    </div>
+    <% if user.msg_count(current_user) %>
+      <div class="user-msg-count">
+    <% else %>
+      <div class="user-msg-count-hidden">
+    <% end %>
+        <%= user.msg_count(current_user) %>
+      </div>
   </div>
 <% end %>

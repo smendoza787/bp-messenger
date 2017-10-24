@@ -26,6 +26,10 @@ class User < ApplicationRecord
         end
       end
     end
-    match.messages.length
+    if match
+      match.messages.length
+    else
+      match
+    end
   end
 end
