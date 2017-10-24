@@ -1,8 +1,21 @@
 <h1>BiggerPockets Messenger</h1>
-<h2>Chat Rooms</h2>
 
-<p><%= link_to 'New chat', new_chat_path %></p>
-
+Existing Chats:
 <ul>
-  <%= render @chats %>
+  <% if @existing_chats_users %>
+    <% @existing_chats_users.each do |other_user| %>
+      <% if other_user != current_user %>
+        <li>
+          <%= link_to(user_chats_path(current_user, :other_user => other_user.id), method: :post) do %>
+            <%= other_user.name %>
+          <% end %>
+        </li>
+      <% end %>
+    <% end %>
+  <% end %>
+</ul>
+
+All Users:
+<ul>
+  <%= render @other_users %>
 </ul>
