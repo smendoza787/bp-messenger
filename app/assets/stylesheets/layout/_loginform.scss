@@ -1,0 +1,32 @@
+#clearance.sign-in {
+  width: 450px;
+  height: 90vh;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  #session_email, #session_password {
+    background-color: #c2c2c2;
+    padding: 20px;
+    border-radius: 500px;
+    border: none;
+    box-shadow: 0 2px 3px #242424;
+    width: 450px;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+  }
+}
+
+#login-btn, #signup-btn {
+  background-color: #36a836;
+  border: none;
+  padding: 10px;
+}
+
+p.login-labels {
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+}

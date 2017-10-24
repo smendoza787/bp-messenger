@@ -1,6 +1,6 @@
 <div id="navigation">
   <div class="nav-brand">
-    <img src="https://bp-assets.biggerpockets.com/assets/logo/logo-1ac27e1791bcad86c95d3326c6c66a014be277075f97e9799825ba209612583a.svg" alt="bp">
+    <img src="https://bp-assets.biggerpockets.com/assets/logo/logo-1ac27e1791bcad86c95d3326c6c66a014be277075f97e9799825ba209612583a.svg" height="30" alt="bp">
     <h4>Messenger</h4>
   </div>
   <div class="nav-links">
@@ -8,7 +8,7 @@
       Signed in as: <%= current_user.email %>
       <%= button_to 'Logout', sign_out_path, method: :delete %>
     <% else %>
-      <%= link_to 'Login', sign_in_path %>
+      <%= link_to 'Login', sign_in_path, class: 'btn btn-success' %>
     <% end %>
   </div>
 </div>
