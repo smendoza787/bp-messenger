@@ -2,8 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#messages {
-  max-height: 400px;
-  overflow-y: auto;
-  overflow-wrap: break-word;
-}
+// layout
+@import 'layout/fonts';
+@import 'layout/background';
+@import 'layout/navigation';

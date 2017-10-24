@@ -1,0 +1,20 @@
+$family: 'Oswald', sans-serif;
+
+#navigation {
+  background-color: #35424D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    color: white;
+    font-family: $family;
+
+    &:hover {
+      color: #808080;
+    }
+  }
+}
+
+.nav-brand, .nav-links {
+  display: flex;
+}

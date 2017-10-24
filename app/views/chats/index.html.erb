@@ -1,19 +1,19 @@
-<h1>BiggerPockets Messenger</h1>
-
 Existing Chats:
-<ul>
-  <% if @existing_chats_users %>
-    <% @existing_chats_users.each do |other_user| %>
-      <% if other_user != current_user %>
-        <li>
-          <%= link_to(user_chats_path(current_user, :other_user => other_user.id), method: :post) do %>
-            <%= other_user.name %>
-          <% end %>
-        </li>
+  <% if @existing_chats_users.length > 0 %>
+    <ul>
+      <% @existing_chats_users.each do |other_user| %>
+        <% if other_user != current_user %>
+          <li>
+            <%= link_to(user_chats_path(current_user, :other_user => other_user.id), method: :post) do %>
+              <%= other_user.name %>
+            <% end %>
+          </li>
+        <% end %>
       <% end %>
-    <% end %>
+    </ul>
+  <% else %>
+    <p>No Active Chats</p>
   <% end %>
-</ul>
 
 All Users:
 <ul>
