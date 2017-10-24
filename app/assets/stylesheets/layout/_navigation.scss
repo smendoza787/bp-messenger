@@ -1,6 +1,6 @@
 $family: 'Oswald', sans-serif;
 
-$break-small: 420px;
+$break-small: 440px;
 
 #navigation {
   width: 100%;
@@ -14,9 +14,7 @@ $break-small: 420px;
   top: 0;
 
   h4 {
-    margin: 0;
-    margin-top: 2px;
-    margin-left: 3px;
+    margin: -2px 0 0;
     font-family: $family;
     font-weight: 300;
     font-size: 1.5em;
