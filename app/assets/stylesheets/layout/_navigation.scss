@@ -1,5 +1,7 @@
 $family: 'Oswald', sans-serif;
 
+$break-small: 420px;
+
 #navigation {
   width: 100%;
   height: 75px;
@@ -34,4 +36,20 @@ $family: 'Oswald', sans-serif;
 
 .nav-brand, .nav-links {
   display: flex;
+}
+
+#nav-logo-big {
+  height: 25px;
+  @media screen and (max-width: $break-small) {
+    display: none;
+  }
+}
+
+#nav-logo-sm {
+  height: 25px;
+  margin: 4px 0 0;
+  display: none;
+  @media screen and (max-width: $break-small) {
+    display: block;
+  }
 }

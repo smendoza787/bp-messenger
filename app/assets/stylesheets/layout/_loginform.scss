@@ -1,7 +1,7 @@
 $h1-font: 'Oswald', sans-serif;
 
 #clearance.sign-in {
-  width: 450px;
+  width: 90%;
   // height: 90vh;
   text-align: center;
   margin: 100px auto 0;
@@ -15,12 +15,11 @@ $h1-font: 'Oswald', sans-serif;
   }
 
   #session_email, #session_password {
-    background-color: #c2c2c2;
+    background-color: #dddddd;
     padding: 20px;
     border-radius: 500px;
     border: none;
     box-shadow: 0 2px 3px #242424;
-    width: 450px;
     font-size: 1.5em;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
