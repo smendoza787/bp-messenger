@@ -1,4 +1,5 @@
 $break-small: 440px;
+$input-font: 'Ubuntu', sans-serif;
 
 .chat-window {
   background-color: #e4e4e4;
@@ -21,6 +22,14 @@ $break-small: 440px;
   margin: 5px;
   height: 100px;
   width: 315px;
+  padding: 10px;
+  font-size: 1.2em;
+
+  outline: none;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
 
   @media screen and (min-width: $break-small) {
     width: 415px; 

@@ -1,7 +1,37 @@
-.incoming-message {
-  background-color: green;
+.avatar-skeleton {
+  background-color: rgb(0, 132, 255);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
 }
 
-.outgoing-message {
-  background-color: lightblue;
+.message-user {
+  display: flex;
+  align-items: center;
+  background-color: rgb(31, 113, 207);
+  border-radius: 5px 5px 0 0;
+  color: white;
+
+  p {
+    margin: 0;
+    margin-left: 10px;
+  }
+}
+
+.message-content {
+  background-color: rgb(187, 187, 187);
+  border-radius: 0 0 5px 5px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.message-user, .message-content {
+  padding: 10px 5px;
+}
+
+.message {
+  border-radius: 5px;
+  margin: 10px 2px;
 }
