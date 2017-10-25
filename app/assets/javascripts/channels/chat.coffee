@@ -1,6 +1,7 @@
 jQuery(document).on 'turbolinks:load', ->
   $messages = $('#messages')
   $message_body = $('#message_body')
+  $message_submit = $('#message_submit')
   if $messages.length > 0
     messages_to_bottom = ->
       $('#chat-messages').scrollTop($('#chat-messages').prop("scrollHeight"))
@@ -28,3 +29,8 @@ jQuery(document).on 'turbolinks:load', ->
         App.chat.send_message $message_body.val(), $messages.data('chat-id')
         e.preventDefault()
         $message_body.val('')
+
+    $message_submit.click ->
+      App.chat.send_message $message_body.val(), $messages.data('chat-id')
+      $message_body.val('')
+      e.preventDefault()
