@@ -1,23 +1,25 @@
-<div id="conversations">
-  <h2>Active Conversations</h2>
-    <% if @existing_chats_users.length > 0 %>
-      <div class="conversation-list">
-        <% @existing_chats_users.each do |other_user| %>
-          <% if other_user != current_user %>
-            <%= render 'users/user', user: other_user  %>
+<div id="chat-index">
+  <div id="conversations">
+    <h2>Active Conversations</h2>
+      <% if @existing_chats_users.length > 0 %>
+        <div class="conversation-list">
+          <% @existing_chats_users.each do |other_user| %>
+            <% if other_user != current_user %>
+              <%= render 'users/user', user: other_user  %>
+            <% end %>
           <% end %>
-        <% end %>
-      </div>
-    <% else %>
-      <div class="conversation-list">
-        <p class="no-active">No Conversations Yet</p>
-      </div>
-    <% end %>
-</div>
+        </div>
+      <% else %>
+        <div class="conversation-list">
+          <p class="no-active">No Conversations Yet</p>
+        </div>
+      <% end %>
+  </div>
 
-<div id="friends">
-  <h2>All Friends</h2>
-  <div class="friends-list">
-    <%= render @other_users %>
+  <div id="friends">
+    <h2>All Friends</h2>
+    <div class="friends-list">
+      <%= render @other_users %>
+    </div>
   </div>
 </div>

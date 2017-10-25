@@ -1,9 +1,16 @@
 <%= link_to "Back to Chats", user_chats_path %>
 
-<h1>Chat with <%= @other_user.name %></h1>
+<div class="chat-window">
+  <h1>Chat with <%= @other_user.name %></h1>
+  
+  <div class="chat-messages">
+    <div id="messages" data-chat-id="<%= @chat.id %>">
+      <%= render @chat.messages %>
+    </div>
+  </div>
 
-<div id="messages" data-chat-id="<%= @chat.id %>">
-  <%= render @chat.messages %>
+  <div id="message_form">
+    <%= text_area_tag :message_body %>
+    <button id="message_submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>  
+  </div>
 </div>
-
-<%= text_area_tag :message_body %>

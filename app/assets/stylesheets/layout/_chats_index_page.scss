@@ -3,6 +3,16 @@ $no-active-font: 'Ubuntu', open-sans;
 $green-color: #36a188;
 $orange-color: #d2538d;
 
+#chat-index{
+  @media screen and (min-width: $break-medium) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
 #conversations,
   #friends {
     display: flex;

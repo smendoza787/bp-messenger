@@ -6,12 +6,4 @@ body {
 
 #messenger-body {
   margin-top: 75px;
-  
-  @media screen and (min-width: $break-medium) {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: baseline;
-    justify-content: center;
-    width: 100%;
-  }
 }
