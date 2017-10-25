@@ -1,3 +1,6 @@
+<% if flash[:notice] %>
+  <div class="notice"><%= flash[:notice] %></div>
+<% end %>
 <div id="chat-index">
   <div id="conversations">
     <h2>Active Conversations</h2>

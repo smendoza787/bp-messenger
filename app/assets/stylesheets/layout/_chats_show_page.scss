@@ -8,8 +8,8 @@ $break-small: 440px;
   border-radius: 10px;
   padding: 5px;
 
-  .chat-messages {
-    height: 375px;
+  #chat-messages {
+    height: 300px;
     overflow: auto;
   }
 }

@@ -3,7 +3,7 @@
 <div class="chat-window">
   <h1>Chat with <%= @other_user.name %></h1>
   
-  <div class="chat-messages">
+  <div id="chat-messages">
     <div id="messages" data-chat-id="<%= @chat.id %>">
       <%= render @chat.messages %>
     </div>

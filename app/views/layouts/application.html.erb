@@ -14,13 +14,6 @@
 
   <body>
     <%= render 'layouts/navigation' %>
-    
-    <% if flash[:error] %>
-      <div id="error">
-        <%= flash[:error] %>
-      </div>
-    <% end %>
-
     <div id="messenger-body">
       <%= yield %>
     </div>
