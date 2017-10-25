@@ -30,8 +30,6 @@ gem 'jbuilder', '~> 2.5'
 
 # clearance gem for authentication
 gem 'clearance', '~> 1.16'
-# friendly_id for pretty URLs
-gem 'friendly_id', '~> 5.1.0' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
