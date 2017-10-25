@@ -54,7 +54,7 @@ group :development do
   gem 'sqlite3'
   # for readable rails code
   gem 'hirb'
-  # gem 'bootstrap-sass'
+  gem 'bootstrap-sass'
 end
 
 group :production do
