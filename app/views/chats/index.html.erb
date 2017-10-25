@@ -1,5 +1,5 @@
 <div id="conversations">
-  <h2>Conversations</h2>
+  <h2>Active Conversations</h2>
     <% if @existing_chats_users.length > 0 %>
       <div class="conversation-list">
         <% @existing_chats_users.each do |other_user| %>
@@ -16,7 +16,7 @@
 </div>
 
 <div id="friends">
-  <h2>Friends</h2>
+  <h2>All Friends</h2>
   <div class="friends-list">
     <%= render @other_users %>
   </div>

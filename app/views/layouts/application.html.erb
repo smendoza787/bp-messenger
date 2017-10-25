@@ -14,9 +14,9 @@
   <body>
     <%= render 'layouts/navigation' %>
     
-    <% if flash[:notice] %>
-      <div id="notice">
-        <%= flash[:notice] %>
+    <% if flash[:error] %>
+      <div id="error">
+        <%= flash[:error] %>
       </div>
     <% end %>
 
