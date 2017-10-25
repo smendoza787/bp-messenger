@@ -9,9 +9,29 @@ class ChatsController < ApplicationController
   end
 
   def show
-    @other_user = User.find(params[:other_user])
-    @chat = Chat.find(params[:id])
-    @message = Message.new
+    @chat = Chat.find_by(id: params[:id])
+    if @chat
+      chat_users = @chat.subscriptions.map{|sub| sub.user.id}
+      if !chat_users.include?(current_user.id)
+        redirect_to root_path
+        flash[:notice] = "Can't access private chat."
+      end
+      @other_user = User.find(params[:other_user])
+      allowed = false
+      chat_users.each do |user_id|
+        if user_id == @other_user.id
+          allowed = true
+        end
+      end
+      if !allowed
+        redirect_to root_path
+        flash[:notice] = "You're not allowed to do that!"
+      end
+      @message = Message.new
+    else
+      redirect_to root_path
+      flash[:notice] = "Woops, that chat doesn't exist."
+    end
   end
 
   def create
