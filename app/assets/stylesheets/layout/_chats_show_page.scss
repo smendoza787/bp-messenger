@@ -1,5 +1,6 @@
 $break-small: 440px;
 $input-font: 'Ubuntu', sans-serif;
+$title-font: 'Oswald', sans-serif;
 
 .chat-window {
   background-color: #e4e4e4;
@@ -12,6 +13,14 @@ $input-font: 'Ubuntu', sans-serif;
   #chat-messages {
     height: 300px;
     overflow: auto;
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-family: $title-font;
+    font-size: 3em;
+    width: fit-content;
+    margin: 10px auto;
   }
 }
 
@@ -64,4 +73,16 @@ $input-font: 'Ubuntu', sans-serif;
     // justify-content: center;
     align-items: center;
   }
+}
+
+.back-btn {
+  background-color: #ad4d6d;
+  width: 95%;
+  display: block;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 12px;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px #000;
+  color: white;
 }

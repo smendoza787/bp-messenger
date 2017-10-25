@@ -34,15 +34,24 @@ $break-x-large: 1200px;
       color: #eee;
     }
   }
+
+  p {
+    margin: 6px 15px;
+    color: white;
+  }
 }
 
 .nav-brand, .nav-links {
   display: flex;
 }
 
+.nav-brand a {
+  display: flex;
+}
+
 #nav-logo-big {
   height: 25px;
-  @media screen and (max-width: $break-small) {
+  @media screen and (max-width: $break-medium) {
     display: none;
   }
 }
@@ -51,7 +60,7 @@ $break-x-large: 1200px;
   height: 25px;
   margin: 0 6px 0;
   display: none;
-  @media screen and (max-width: $break-small) {
+  @media screen and (max-width: $break-medium) {
     display: block;
   }
 }

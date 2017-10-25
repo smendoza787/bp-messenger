@@ -1,7 +1,7 @@
-<%= link_to "Back to Chats", user_chats_path %>
+<p><%= link_to "Back to Chats", user_chats_path, class: 'back-btn' %></p>
 
 <div class="chat-window">
-  <h1>Chat with <%= @other_user.name %></h1>
+  <h1><%= @other_user.name %></h1>
   
   <div id="chat-messages">
     <div id="messages" data-chat-id="<%= @chat.id %>">

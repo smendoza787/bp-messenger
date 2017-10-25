@@ -8,7 +8,7 @@
 .message-user {
   display: flex;
   align-items: center;
-  background-color: rgb(31, 113, 207);
+  background-color: #15a060;
   border-radius: 5px 5px 0 0;
   color: white;
 
@@ -28,10 +28,14 @@
 }
 
 .message-user, .message-content {
-  padding: 10px 5px;
+  padding: 10px;
+  box-shadow: 0 2px 3px rgb(107, 107, 107);
 }
 
 .message {
   border-radius: 5px;
-  margin: 10px 2px;
+  width: 95%;
+  margin: 10px auto;
+  word-wrap: break-word;
 }
+
