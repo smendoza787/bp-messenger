@@ -78,7 +78,7 @@ $title-font: 'Oswald', sans-serif;
 
 .back-btn {
   background-color: #ad4d6d;
-  width: 95%;
+  width: fit-content;
   display: block;
   max-width: 500px;
   margin: 20px auto;
@@ -86,4 +86,11 @@ $title-font: 'Oswald', sans-serif;
   border-radius: 5px;
   box-shadow: 0 2px 3px #000;
   color: white;
+  transition: background-color 350ms ease-in-out;
+
+  &:hover {
+    transition: background-color 350ms ease-in-out;
+    background-color: #973858;
+    color: white;
+  }
 }

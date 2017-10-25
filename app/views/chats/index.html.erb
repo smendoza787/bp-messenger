@@ -22,7 +22,11 @@
   <div id="friends">
     <h2>All Friends</h2>
     <div class="friends-list">
-      <%= render @other_users %>
+      <% if @other_users.length > 0 %>
+        <%= render @other_users %>
+      <% else %>
+        <p class="no-active">Waiting for other users to sign up..</p>
+      <% end %>
     </div>
   </div>
 </div>
