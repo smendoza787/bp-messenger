@@ -1,7 +1,17 @@
+$break-medium: 600px;
+
 body {
   background-color: #155087;
 }
 
 #messenger-body {
   margin-top: 75px;
+  
+  @media screen and (min-width: $break-medium) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    justify-content: center;
+    width: 100%;
+  }
 }

@@ -1,6 +1,7 @@
+$break-medium: 600px;
 $no-active-font: 'Ubuntu', open-sans;
 $green-color: #36a188;
-$orange-color: #d68e4a;
+$orange-color: #d2538d;
 
 #conversations,
   #friends {
@@ -8,6 +9,7 @@ $orange-color: #d68e4a;
     flex-direction: column;
     justify-content: center;
     width: 90%;
+    max-width: 450px;
     margin: 0 auto;
 
     h2 {
@@ -15,6 +17,10 @@ $orange-color: #d68e4a;
       padding: 10px;
       border-radius: 10px;
       text-align: center;
+    }
+  
+    @media screen and (min-width: $break-medium) {
+      width: 47%;
     }
 }
 
@@ -67,7 +73,7 @@ $orange-color: #d68e4a;
 
   &:hover {
     transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
-    background-color: rgba(255, 255, 255, 0.301);
+    background-color: rgba(255, 255, 255, 0.13);
   }
 
   .user-avatar {
