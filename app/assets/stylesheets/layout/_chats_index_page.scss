@@ -1,4 +1,17 @@
+$break-medium: 600px;
 $no-active-font: 'Ubuntu', open-sans;
+$green-color: #36a188;
+$orange-color: #d2538d;
+
+#chat-index{
+  @media screen and (min-width: $break-medium) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
 
 #conversations,
   #friends {
@@ -6,17 +19,18 @@ $no-active-font: 'Ubuntu', open-sans;
     flex-direction: column;
     justify-content: center;
     width: 90%;
+    max-width: 450px;
     margin: 0 auto;
 
     h2 {
-      width: fit-content;
       color: white;
-      text-shadow: 0 2px 2px #424242;
-      padding: 10px 10px 10px;
-      display: inline-block;
-      border-radius: 10px 10px 0 0;
-      position: relative;
-      top: 22px;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+    }
+  
+    @media screen and (min-width: $break-medium) {
+      width: 47%;
     }
 }
 
@@ -24,25 +38,44 @@ $no-active-font: 'Ubuntu', open-sans;
   .friends-list {
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 1px 4px #2e2e2e;
 }
 
-#conversations h2,
+#conversations h2 {
+  background-color: $green-color;
+}
+
 .conversation-list {
-  background-color: #2c69a2;
+  background-color: none;
+  border: 1px solid $green-color;
+
+  .user {
+    border: 1px solid $green-color;
+  }
 }
 
-#friends h2, 
+#friends h2 {
+  background-color: $orange-color;
+}
+
 .friends-list {
-  background-color: #143857;
+  background-color: none;
+  border: 1px solid $orange-color;
+
+  .user {
+    border: 1px solid $orange-color;
+  }
+
+  .user .user-msg-count {
+    background-color: $green-color;
+  }
 }
 
 .user {
-  background-color: #7aafd8;
+  background-color: none;
   border-radius: 10px;
   margin: 10px 0;
   padding: 5px;
-  color: #fff;
+  color: white;
   transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
   font-size: 1.5em;
   display: flex;
@@ -50,8 +83,7 @@ $no-active-font: 'Ubuntu', open-sans;
 
   &:hover {
     transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
-    color: #585858;
-    background-color: #478fca;
+    background-color: rgba(255, 255, 255, 0.13);
   }
 
   .user-avatar {
@@ -67,7 +99,7 @@ $no-active-font: 'Ubuntu', open-sans;
     justify-content: center;
     align-items: center;
     width: 35px;
-    background-color: #ce3e81;
+    background-color: $orange-color;
     border-radius: 5px;
   }
 }

@@ -1,6 +1,9 @@
 <div class="message">
-  <strong><%= message.user.name %></strong> says:
-  <%= message.body %>
-  <br>
-  <hr>
+  <div class="message-user">
+    <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+    <p><%= message.user.name %></p>
+  </div>
+  <div class="message-content">
+    <p><%= message.body %></p>
+  </div>
 </div>

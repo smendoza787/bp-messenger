@@ -1,0 +1,41 @@
+.avatar-skeleton {
+  background-color: rgb(0, 132, 255);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.message-user {
+  display: flex;
+  align-items: center;
+  background-color: #15a060;
+  border-radius: 5px 5px 0 0;
+  color: white;
+
+  p {
+    margin: 0;
+    margin-left: 10px;
+  }
+}
+
+.message-content {
+  background-color: rgb(187, 187, 187);
+  border-radius: 0 0 5px 5px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.message-user, .message-content {
+  padding: 10px;
+  box-shadow: 0 2px 3px rgb(107, 107, 107);
+}
+
+.message {
+  border-radius: 5px;
+  width: 95%;
+  margin: 10px auto;
+  word-wrap: break-word;
+}
+

@@ -1,0 +1,88 @@
+$break-small: 440px;
+$input-font: 'Ubuntu', sans-serif;
+$title-font: 'Oswald', sans-serif;
+
+.chat-window {
+  background-color: #e4e4e4;
+  width: 95%;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 5px;
+
+  #chat-messages {
+    height: 300px;
+    overflow: auto;
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-family: $title-font;
+    font-size: 3em;
+    width: fit-content;
+    margin: 10px auto;
+  }
+}
+
+#message_body {
+  background-color: #c9c9c9;
+  border-radius: 10px;
+  border: none;
+  margin: 5px;
+  height: 100px;
+  width: 315px;
+  padding: 10px;
+  font-size: 1.2em;
+
+  outline: none;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+
+  @media screen and (min-width: $break-small) {
+    width: 415px; 
+  }
+}
+
+#message_submit {
+  width: 35px;
+  height: 35px;
+  background-color: #11a38b;
+  border-radius: 50%;
+  border: none;
+  padding: 5px;
+  font-size: 1.0em;
+  color: white;
+  position: relative;
+  bottom: 5px;
+
+  @media screen and (min-width: $break-small) {
+    width: 55px;
+    height: 55px;
+    font-size: 1.5em;
+  }
+}
+
+#message_form {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+
+  @media screen and (min-width: $break-small) {
+    // justify-content: center;
+    align-items: center;
+  }
+}
+
+.back-btn {
+  background-color: #ad4d6d;
+  width: 95%;
+  display: block;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 12px;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px #000;
+  color: white;
+}

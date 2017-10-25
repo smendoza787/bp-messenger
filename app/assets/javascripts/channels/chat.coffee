@@ -3,7 +3,7 @@ jQuery(document).on 'turbolinks:load', ->
   $message_body = $('#message_body')
   if $messages.length > 0
     messages_to_bottom = ->
-      $messages.scrollTop($messages.prop("scrollHeight"))
+      $('#chat-messages').scrollTop($('#chat-messages').prop("scrollHeight"))
     messages_to_bottom()
     App.chat = App.cable.subscriptions.create {
       channel: "ChatChannel"

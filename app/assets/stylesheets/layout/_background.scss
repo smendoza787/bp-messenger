@@ -1,7 +1,15 @@
+$break-medium: 600px;
+
 body {
   background-color: #155087;
 }
 
 #messenger-body {
-  margin-top: 75px;
+  margin: 100px 0;
+}
+
+.notice {
+  background-color: #d44e4e;
+  padding: 10px;
+  color: white;
 }

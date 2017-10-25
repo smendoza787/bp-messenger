@@ -1,6 +1,9 @@
 $family: 'Oswald', sans-serif;
 
-$break-small: 440px;
+$break-small: 400px;
+$break-medium: 600px;
+$break-large: 800px;
+$break-x-large: 1200px;
 
 #navigation {
   width: 100%;
@@ -31,15 +34,24 @@ $break-small: 440px;
       color: #eee;
     }
   }
+
+  p {
+    margin: 6px 15px;
+    color: white;
+  }
 }
 
 .nav-brand, .nav-links {
   display: flex;
 }
 
+.nav-brand a {
+  display: flex;
+}
+
 #nav-logo-big {
   height: 25px;
-  @media screen and (max-width: $break-small) {
+  @media screen and (max-width: $break-medium) {
     display: none;
   }
 }
@@ -48,7 +60,7 @@ $break-small: 440px;
   height: 25px;
   margin: 0 6px 0;
   display: none;
-  @media screen and (max-width: $break-small) {
+  @media screen and (max-width: $break-medium) {
     display: block;
   }
 }

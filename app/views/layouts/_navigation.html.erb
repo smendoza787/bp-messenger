@@ -1,12 +1,15 @@
 <div id="navigation">
   <div class="nav-brand">
-    <img src="https://bp-assets.biggerpockets.com/assets/logo/logo-1ac27e1791bcad86c95d3326c6c66a014be277075f97e9799825ba209612583a.svg" alt="biggerpockets" id="nav-logo-big">
-    <%= image_tag 'bp-logo-sm.png', id: 'nav-logo-sm' %>
-    <h4>Messenger</h4>
+    <a href="/">
+      <img src="https://bp-assets.biggerpockets.com/assets/logo/logo-1ac27e1791bcad86c95d3326c6c66a014be277075f97e9799825ba209612583a.svg" alt="biggerpockets" id="nav-logo-big">
+      <%= image_tag 'bp-logo-sm.png', id: 'nav-logo-sm' %>
+      Messenger
+    </a>
   </div>
   <div class="nav-links">
     <% if signed_in? %>
-      <%= button_to 'Logout', sign_out_path, method: :delete, class: 'btn btn-danger' %>
+      <p>Signed in as <%= current_user.name %> <i class="fa fa-hand-spock-o" aria-hidden="true"></i></p>
+      <%= button_to 'Logout', sign_out_path, method: :delete, class: 'btn' %>
     <% else %>
       <%= link_to 'Login', sign_in_path, class: 'btn btn-success' %>
     <% end %>
