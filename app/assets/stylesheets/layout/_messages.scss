@@ -8,7 +8,7 @@
 .message-user {
   display: flex;
   align-items: center;
-  background-color: #15a060;
+  background-color: #47c289;
   border-radius: 5px 5px 0 0;
   color: white;
 
@@ -30,6 +30,15 @@
 .message-user, .message-content {
   padding: 10px;
   box-shadow: 0 2px 3px rgb(107, 107, 107);
+}
+
+.other-user {
+  background-color: #d65656;
+  flex-direction: row-reverse;
+  
+  p {
+    margin-right: 10px;
+  }
 }
 
 .message {

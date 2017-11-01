@@ -5,7 +5,15 @@
   
   <div id="chat-messages">
     <div id="messages" data-chat-id="<%= @chat.id %>">
-      <%= render @chat.messages %>
+      <% @chat.messages.each do |msg| %>
+        <% if msg.user == current_user %>
+          <%= render partial: 'messages/message', locals: { message: msg } %>
+        <% else %>
+          <%= render partial: 'messages/othermessage', locals: { message: msg } %>
+        <% end %>
+      <% end %>
+
+      <%# render @chat.messages, locals: { current_user: current_user } %>
     </div>
   </div>
 
