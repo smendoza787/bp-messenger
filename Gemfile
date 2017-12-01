@@ -31,6 +31,9 @@ gem 'jbuilder', '~> 2.5'
 # clearance gem for authentication
 gem 'clearance', '~> 1.16'
 
+# moment js for rails asset pipeline
+gem 'momentjs-rails'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
