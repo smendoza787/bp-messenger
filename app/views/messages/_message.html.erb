@@ -6,4 +6,9 @@
   <div class="message-content">
     <p><%= message.body %></p>
   </div>
+  <% if message.created_at %>
+    <div class="message-timestamp">
+      <p class="message-timestamp"><%= time_ago_in_words(message.created_at) %> ago</p>
+    </div>
+  <% end %>
 </div>
